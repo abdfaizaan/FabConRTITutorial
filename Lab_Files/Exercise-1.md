@@ -2,9 +2,11 @@
 
 ### Estimated duration: 30 Minutes
 
+## Overview
+
 In this exercise, you will explore **Real-Time Intelligence** to gain insights from streaming data, and create a **Fabric Workspace** to organize and collaborate on your projects. You will set up an **Eventhouse** to efficiently store and analyze event-driven data, enable **OneLake Availability** for seamless data integration.
 
-## Lab objectives:
+## Objectives:
 
 In this exercise, you will be able to complete the following tasks:
 
@@ -20,6 +22,8 @@ In this task, you will explore Real-Time Intelligence and its categories, gainin
 1. Select **Workloads** icon on the left of your screen. A dialog with the list of Fabric experiences will open. The list of experiences includes Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science and Data Warehouse. Let’s explore.
 
     ![](media/guide-02up2.png)
+
+    >**Note:** If you do not see Workloads icon, click on the three horizontal dots at the bottom of the left navigation pane to expand and find Workloads.
 
 1. Scroll down to the bottom and select **Real-Time Intelligence** under Workloads.
 
@@ -76,9 +80,9 @@ In this task, you will create a workspace to begin working with Real-Time Intell
 
     ![](media/guide-20up2.png)
 
-1. Under **License mode**, select **Trial (1)**, then click **Apply (2)** to create a new workspace.
+1. Under **License mode**, select **Fabric Trial (1)**, then click **Apply (2)** to create a new workspace.
 
-    ![](media/guide-25up2.png)
+    ![](media/new/E1T2S7-1702.png)
 
     >**Note:** If the **Introducing task flows** dialog opens, click on **Got it**.
 
@@ -132,12 +136,9 @@ In this task, you’ll enable OneLake Availability to automatically copy KQL Dat
 
     ![](media/image_task04_step03up2.png)
 
-## Review
-In this lab you have completed the following:
-- Experienced Real-Time Intelligence.  
-- Created a Fabric Workspace.
-- Created an Eventhouse.
-- Enabled OneLake Availability.
+## Summary
+
+In this lab, you have explored the Real-Time Intelligence experience in Microsoft Fabric, created a Fabric Workspace, set up an Eventhouse for real-time data storage and analysis, and enabled OneLake Availability for seamless data integration. These foundational steps will allow you to effectively manage and analyze streaming data within Microsoft Fabric.
 
 ### You have successfully completed the exercise. Now, click on **Next >>** from the lower right corner to proceed on to the next exercise.
 

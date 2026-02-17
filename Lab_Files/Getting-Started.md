@@ -34,15 +34,12 @@ In this lab, you will build a Real-Time Intelligence Solution in Microsoft Fabri
 
 The architecture for this lab involves the following key components:
 
-- **Notebook**: Generates and ingests streaming data into the system.  
+- **Python Notebook**: Generates and ingests streaming data into the system.  
 - **Eventstream**: Acts as a streaming data pipeline, ingesting events from the Notebook into **Eventhouse**.  
 - **Eventhouse**: A real-time analytics store that processes and structures streaming data for further use.  
 - **Lakehouse**: Serves as a storage layer for structured and unstructured data, accessible via shortcuts from **Eventhouse**.  
 - **Real-Time Dashboard**: Visualizes real-time data from **Eventhouse** for monitoring and insights.  
 - **Data Activator**: Automates responses and alerts based on real-time streaming data.  
-
-**Fabric trial provides access to most features, but excludes Copilot, private links, and trusted workspace access ([learn more](https://learn.microsoft.com/en-us/fabric/fundamentals/fabric-trial#overview-of-the-trial-capacity)).**
-
 
 ## Getting Started with Lab
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
@@ -89,7 +86,7 @@ Feel free to **Start**, **Stop**, or **Restart** **(2)** your virtual machine as
 
       ![](media/new/pass.png)
 
-1. Click **Sign in** and follow the prompts to sign into Fabric.
+1. On the **Stay Signed in** window, select **Yes**. 
 
 1. You will be navigated to the **Fabric Home Page**.
 
@@ -103,6 +100,8 @@ Feel free to **Start**, **Stop**, or **Restart** **(2)** your virtual machine as
 
     ![](media/image11upd2.png)
 
+    >**Note:** Fabric trial provides access to most features, but excludes Copilot, private links, and trusted workspace access ([learn more](https://learn.microsoft.com/en-us/fabric/fundamentals/fabric-trial#overview-of-the-trial-capacity)).
+
 1. **Activate your 60-day free Fabric trial capacity** dialog opens. Select **Activate**.
 
     ![](media/image12upd2.png)
@@ -111,9 +110,13 @@ Feel free to **Start**, **Stop**, or **Restart** **(2)** your virtual machine as
 
     ![](media/new/1.png)
 
+1. If prompted, close the window for **Invite teammates to try Fabric to extend your trial**.
+
+    ![](media/new/close-invite-window.png)
+
 1. You will be navigated back to the **Microsoft** **Fabric Home page**.
 
-    ![](media/1.4.png)
+    ![](media/new/gett-started-S11-1702.png)
 
 ## Support Contact
 
