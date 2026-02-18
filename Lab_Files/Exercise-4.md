@@ -1,9 +1,12 @@
 
 # Exercise 04: Building an Interactive Real-Time Dashboard with Live Data
 ### Estimated duration: 90 Minutes
+
+## Overview
+
 In this exercise, you will develop a **Real-Time Dashboard** with auto-refresh for live insights. Finally, you will use **Data Activator** to automate actions based on real-time data.
 
-## Lab objectives:
+## Objectives:
 
 In this exercise, you will be able to complete the following tasks:
 
@@ -21,9 +24,9 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/new/5.png)
 
-1. To create a new realtime dashboard click on the button **+ New Item  (1)**, search for Real-Time Dashboard and select **Real-Time Dashboard  (2)**.
+1. To create a new realtime dashboard click on the button **+ New Item  (1)**, search for **Real-Time Dashboard (2)** and select **Real-Time Dashboard  (3)**.
 
-    ![](media/guide-48up2.png)
+    ![](media/E4T1S2-1802.png)
 
 1. Enter the name as **Web Events Dashboard (1)**. Select location as **RTI_<inject key="DeploymentID" enableCopy="false"></inject> (2)**, then click on **Create (3)**.
 
@@ -33,7 +36,13 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/new/31.png)
 
+    >**Note:** Close the Data sources window which opens on the right side of the browser after selecting the KQL database.
+
 1. Proceed to paste each query below, add a visual, and apply changes.
+
+1. From the Home tab **(1)**, click on the button **New tile (2)** to create a new tile for the dashboard.
+
+    ![](media/new/E4T1S6-1802.png)
 
 1. This visual will show the **Clicks by hour**. It will use the following query.
 
@@ -49,15 +58,15 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/new/32.png)
 
-1. Format the visual by entering `Click by hour` **(1)** in the field **Tile name**. Select **Area chart  (2)** under **Visual type.** Then click on the button **Apply changes  (3)**.
+1. Format the visual by entering`Click by hour` **(1)** in the field **Tile name**. Select **Area chart  (2)** under **Visual type.** Then click on the button **Apply changes  (3)**.
 
     ![](media/new/33.png)
 
-1. While editing the dashboard, Click on the tab **Manage  (1)** on the top left then click on the button **Parameters  (2)**.
+1. Click on the tab **Manage  (1)** on the top left then click on the button **Parameters  (2)**.
 
     ![](media/new/34.png)
 
-1. To edit the parameter **Time range** click on the **pencil** icon. This will enter the edit mode for this parameter.
+1. On the Parameters window which opens on the right side, click on the **pencil** icon under **Time range**. This will enter the edit mode for this parameter.
 
     ![](media/guide-54up2.png)
 
@@ -90,9 +99,9 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/new/38.png)
 
-1. Click on the **Home (1)** tab and then click on the button **New tile (2)** again to proceed with the next visuals.
+1. From the **Home** tab, click on the **New tile** button again to proceed with the next visuals.
 
-    ![](media/new/36.png)
+    ![](media/new/E4T1S17-1802.png)
 
 1. Enter the following query, then click on the **Run (1)** button. To create a visualisation click on the button **+ Add Visual (2)**.
 
@@ -111,9 +120,9 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/new/40.png)
 
-1. Click on the **Home (1)** tab and then click on the button **New tile (2)** again to proceed with the next visuals.
+1. From the **Home** tab, click on the **New tile (2)** button again to proceed with the next visuals.
 
-    ![](media/new/36.png)
+    ![](media/new/E4T1S20-1802.png)
 
 1. Enter the following query, then click on the **Run (1)** button. To create a visualisation click on the button **+ Add Visual (2)**.
 
@@ -133,9 +142,9 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/new/42.png)
 
-1. Click on the **Home (1)** tab and then click on the button **New tile (2)** again to proceed with the next visuals.
+1. From the **Home** tab, click on the **New tile (2)** button again to proceed with the next visuals.
 
-    ![](media/new/36.png)
+    ![](media/new/E4T1S23-1802.png)
 
 1. Enter the following query, then click on the **Run (1)** button. To create a visualisation click on the button **+ Add Visual (2)**.
 
@@ -156,19 +165,21 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
    ![](media/new/43.png)
 
-1. Enter **Impressions (1)** in the field **Tile name**. Select **Stat (2)** in the combobox **Visual type**. In combobox **Data** Value column select **impressions (long) (3)**. Then click on the button **Apply changes (4)**.
+1. Enter **Impressions (1)** in the field **Tile name**. Select **Stat (2)** in the **Visual type**. In **Data** Value column select **impressions (long) (3)**. Then click on the button **Apply changes (4)**.
 
     ![](media/new/44.png)
 
-1. Click the 3-dots (...) **(1)** at the top right of the tile you just created and select **Duplicate  (3)** from the **Tile options  (2)** and duplicate it two more times.
+1. Click the 3-dots (...) **(1)** at the top right of the Impressions tile you just created and select **Duplicate  (2)** and duplicate it one more times.
 
-    ![](media/new/45.png)
+    ![](media/new/E4T1S26-1802.png)
+
+    ![](media/new/E4T1S27-1802.png)
 
 1. Click the 3-dots (...) **(1)** on 1st duplicate and select **Edit (2)** to edit the tile.
 
     ![](media/new/46.png)
 
-1. Name the 2nd one **Clicks (1)**, set the Data value column to **clicks (long) (2)**, then click on the button **Apply changes (3)**.
+1. Enter the **Tile name** as **Clicks (1)**, set the Data value column to **clicks (long) (2)**, then click on the button **Apply changes (3)**.
 
     ![](media/fabrta57up2.png)
 
@@ -176,13 +187,13 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/new/46.png)
 
-1. Name the 3rd **Click Through Rate (1)**, set the Data value column to **CTR (2)**, then click on the button **Apply changes (3)**.
+1. Enter the **Tile name** as **Click Through Rate (1)**, set the Data value column to **CTR (long) (2)**, then click on the button **Apply changes (3)**.
 
     ![](media/fabrta58up2.png)
 
-1. Click on the **Home (1)** tab and then click on the button **New tile (2)** again to proceed with the next visuals.
+1. From the **Home** tab, click on the **New tile (2)** button again to proceed with the next visuals.
 
-    ![](media/new/36.png)
+    ![](media/new/E4T1S31-1802.png)
 
 1. Enter the following query, then click on the **Run (1)** button. To create a visualisation click on the button **+ Add visual (2)**.
 
@@ -201,9 +212,9 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
    ![](media/new/48.png)
 
-1. Click on the **Home (1)** tab and then click on the button **New tile (2)** again to proceed with the next visuals.
+1. From the **Home** tab, click on the **New tile (2)** button again to proceed with the next visuals.
 
-    ![](media/new/36.png)
+    ![](media/new/E4T1S33-1802.png)
 
 1. Enter the following query, then click on the **Run (1)** button. To create a visualisation click on the button **+ Add visual (2)**.
     
@@ -226,7 +237,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
 1. To add a **Logo**, click on the **New text tile** button from the top menu bar.
 
-    ![](media/new/51.png)
+    ![](media/new/E4T1S37-1802.png)
 
 1. Paste the following code in the text area and click on the button **Apply changes**.
 
@@ -240,7 +251,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
 1. After you added all the visuals and moved them to thier appropiate places your dashboard should look similar to the below image.
 
-    ![](media/5.29.png)
+    ![](media/new/E4T1S39-1802.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -253,11 +264,11 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
 In this task, you will enable auto-refresh so the dashboard will be automatically updated while it is shown on screen.
 
-1. While editing the dashboard, click on the tab **Manage  (1)** and then click on the button **Auto refresh (2)** This will open a pane on the right side of the browser.
+1. Click on the tab **Manage  (1)** and then click on the button **Auto refresh (2)** This will open a pane on the right side of the browser.
 
     ![](media/image_task13_step19up2.png)
 
-1. In the pane **Auto refresh** set it to **Enabled (1)** and set **Default refresh rate** to **Continous (2)**. Then click on the button **Apply (3)**.
+1. In thr **Auto refresh** window which opens on the righ side, set it to **Enabled (1)** and set **Default refresh rate** to **Continous (2)**. Then click on the button **Apply (3)**.
 
     ![](media/guide-56up2.png)
 

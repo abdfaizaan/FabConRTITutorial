@@ -2,9 +2,11 @@
 # Exercise 02: Real-Time Data Processing with Eventstream and Notebooks
 ### Estimated duration: 60 Minutes
 
+## Overview
+
 In this exercise, you will create an **Eventstream** while defining its topology for real-time data ingestion. Additionally, you will import and run a **Data Generator Notebook** to simulate streaming events.
 
-## Lab objectives: 
+## Objectives: 
 
 In this exercise, you will be able to complete the following tasks:
 
@@ -21,9 +23,9 @@ In this task, you will be streaming events (impressions and clicks events) gener
 
     ![](media/new/5.png)
 
-1. Click on **+ New Item (1)**. In the popout window scroll a little bit down and select **Eventstream (2)**.
+1. Click on **+ New Item (1)**. In the popout window search for **Eventstream (2)** and select **Eventstream (3)** from the **Get data** section.
 
-    ![](media/new/6.png)
+    ![](media/new/E2T1S2-1802.png)
 
 1. Give the Eventstream the name **WebEventsStream_ES (1)**. Click on **Create (2)**.
 
@@ -47,9 +49,9 @@ In this task, you will be streaming events (impressions and clicks events) gener
 
     ![](media/guide-05up2.png)
 
-1. To copy the **Connection string-primary key** you first have to click on the view icon. After the connection string is revealed. Click on the copy icon and copy the connection string to Notepad as well.
+1. To copy the **Connection string-primary key** you first have to click on the view icon **(1)**. After the connection string is revealed. Click on the copy icon **(2)** and copy the connection string to Notepad as well.
 
-    ![](media/guide-06up2.png)
+    ![](media/new/E2T1S8-1802.png)
 
     >**Note:** To copy the connection string it must be visible.
 
@@ -62,11 +64,13 @@ In this task, you will be streaming events (impressions and clicks events) gener
 ## Task 2: Import Data Generator Notebook
 We use a python notebook to generate a stream of artificial click events. The notebook can be found in **C:\LabFiles** directory.
 
-1. Navigate back to your workspace **RTI_<inject key="DeploymentID" enableCopy="false"></inject> (1)** that you have created.
+1. Navigate back to your workspace by clicking on **RTI_<inject key="DeploymentID" enableCopy="false"></inject> (1)** from the left navigation pane and then select it **(2)**.
 
-1. Click on **Import (2)** option at the top center and select **Notebook (3)** and click on **From this computer (4)** option to import notebook file from your local drive.
+    ![](media/new/E2T2S1-1802.png)
 
-    ![](media/guide-07up2.png)
+1. Click on **Import (1)** option at the top center and select **Notebook (2)** and click on **From this computer (3)** option to import notebook file from your local drive.
+
+    ![](media/new/E2T2S2-1802.png)
 
 1. In the right side pane **Import status**. Select **Upload**.
 
@@ -85,11 +89,13 @@ Now we have to run the notebook to create the stream of artificial click events 
 
     ![](media/new/8.png)
 
-2. Select the **Workspace default** as the **Environment** settings.
+    >**Note:** If prompted with **Enhance your notebook experience with AI tools** pop-up, click on **Skip tour**.
 
-    ![](media/workspacedefaultsettingup2.png)     
+2. In the **Environment (1)** settings, click on the dropdown menu **(2)** and select **Change to workspace default(3)**.
 
-3. Paste in the values your copied in **Task 1 - Create Event Stream** as values for `eventHubNameevents` and `eventHubConnString` into the `notebook`.
+    ![](media/new/E2T3S2-1802.png)     
+
+3. IN the second cell, paste in the values your copied in **Task 1 - Create Event Stream** as values for `eventHubNameevents` and `eventHubConnString` into the `notebook`.
 
     ![](media/image_task07_step02up2.png)
 
@@ -113,7 +119,7 @@ In this task, you will create the Eventstream topology that will insert the stre
 
 1. Open your Eventstream in your Fabric Workspace by clicking on your **RTI_<inject key="DeploymentID" enableCopy="false"></inject> (1)** icon in the left pane, and then navigating to **WebEventStream_ES (2)**.
 
-    ![](media/new/9.png)
+    ![](media/new/E2T4S1-1802.png)
 
 2. Click on **Edit** button located at the top-center.
 
@@ -164,7 +170,7 @@ In this task, you will create the Eventstream topology that will insert the stre
 
     ![](media/image_task08_step10up2.png)
 
-11. Click the pencil in node **Eventhouse (1)** to enter edit mode. Provide the following values in the pane Eventhouse and click the button **Save (9)** after you entered all the values.
+11. Click the pencil in node **Eventhouse (1)** to enter edit mode. Provide the following values in the pane Eventhouse and click the button **Save (11)** after you entered all the values.
 
     | Field                           | Value                                                                                                 |
     |----------------------------------|-------------------------------------------------------------------------------------------------------|
@@ -173,13 +179,13 @@ In this task, you will create the Eventstream topology that will insert the stre
     | Workspace                       | Select **RTI_<inject key="DeploymentID" enableCopy="false"></inject> (4)**                                  |
     | Eventhouse                       | Select the Eventhouse **WebEvents_EH (5)**                                                                     |
     | KQL Database                    | Select the KQL Database **WebEvents_EH (6)**                                                                   |
-    | KQL Destination table               | Click on **Create new** and enter **BronzeClicks (7)** as name for the new table and click on Done.               |
-    | Input data format               | Ensure that the option **Json (8)** is selected.                                                              |
+    | KQL Destination table               | Click on **Create new (7)** and enter **BronzeClicks (8)** as name for the new table and click on **Done (9)**.               |
+    | Input data format               | Ensure that the option **Json (10)** is selected.                                                              |
 
-    ![](media/guide-12up2.png)
+    ![](media/new/E2T4S11-1802.png)
 
 
-12. Click on the highlighted sign next to the node **WebEventsStream_ES** in the image below.
+12. Hover the mouse over the connection arrow between WebEventsStream_ES and ClickEventsFilter and click on the highlighted sign above the arrow.
 
     ![](media/guide-13up2.png)
 
@@ -253,13 +259,9 @@ In this task, you will create the Eventstream topology that will insert the stre
 
     ![](media/guide-22up2.png)
 
-## Review
+## Summary
 
-In this lab you have completed the following:
-- Created a new Eventstream.
-- Imported Data Generator Notebook.
-- Run the notebook.
-- Defined Eventstream topology.
+In this exercise, you have created an Eventstream topology that filters click and impression events from the incoming stream of events and inserts them into separate tables in your KQL database in your Eventhouse. You have also run a notebook that generates synthetic click and impression events and sends them to the Eventstream.
 
 ### You have successfully completed the exercise. Now, click on **Next >>** from the lower right corner to proceed on to the next exercise.
 

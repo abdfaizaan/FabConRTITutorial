@@ -138,7 +138,7 @@ In this task, you’ll enable OneLake Availability to automatically copy KQL Dat
 
 ## Summary
 
-In this lab, you have explored the Real-Time Intelligence experience in Microsoft Fabric, created a Fabric Workspace, set up an Eventhouse for real-time data storage and analysis, and enabled OneLake Availability for seamless data integration. These foundational steps will allow you to effectively manage and analyze streaming data within Microsoft Fabric.
+In this exercise, you have explored the Real-Time Intelligence experience in Microsoft Fabric, created a Fabric Workspace, set up an Eventhouse for real-time data storage and analysis, and enabled OneLake Availability for seamless data integration. These foundational steps will allow you to effectively manage and analyze streaming data within Microsoft Fabric.
 
 ### You have successfully completed the exercise. Now, click on **Next >>** from the lower right corner to proceed on to the next exercise.
 

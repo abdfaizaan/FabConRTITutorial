@@ -70,7 +70,10 @@ Feel free to **Start**, **Stop**, or **Restart** **(2)** your virtual machine as
 
     ![](media/new/edge.png)
 
-1. Visit `https://app.fabric.microsoft.com/`. You will be navigated to the login page.
+1. Copy the below link and paste it in the address bar and hit enter to navigate to sign in page of **Microsoft Fabric portal**.
+    ```
+    https://app.fabric.microsoft.com/
+    ```
 
     ![](media/guide-58up.png)
 
